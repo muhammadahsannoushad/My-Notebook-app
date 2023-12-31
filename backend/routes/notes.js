@@ -68,5 +68,24 @@ router.post('/addnote', fetchuser, [
 
   }) 
 
+  
+// Route 4: Deleting an existing Note using: DELETE "/api/notes/deletenote". login required
+router.delete('/deletenote/:id', fetchuser, async (req, res)=>{
+    const { title, description, tag} = req.body;
+    
+    
+    // find the note to be delete and delete it
+    let note = await Notes.findById(req.params.id);
+    if(!note){res.status(404).send("Not found")}
+    
+    // Allow deletion if user owns this note
+    if(note.user.toString() !== req.user.id){
+        return res.status(401).send("Not Allowed");    
+    }
+  
+    note =  await Notes.findByIdAndDelete(req.params.id)
+  
+    res.json({"Success": "Note has been deleted"});
+}) 
 
  module.exports = router
