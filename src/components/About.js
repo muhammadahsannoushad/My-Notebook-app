@@ -13,9 +13,8 @@ const a = useContext(noteContext)
   return (
     <div>
       This is a About {a.name} and he is class {a.class}
-    
-    </div>
-  )
+     </div> 
+  ) 
 }
 
 export default About
