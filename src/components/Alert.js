@@ -5,7 +5,7 @@ const Alert = (props) => {
         <div>
             <div className="alert alert-primary" role="alert">
                 {props.message}
-            </div>
+            </div> 
         </div>
     )
 }
