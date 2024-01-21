@@ -1,10 +1,12 @@
-import React from 'react'
-
+// import AddNote from './AddNote';
+import Notes from './Notes';
 const Home = () => {
+ 
   return (
-    <div>
-       This is Home page
-    </div>
+  <div>  
+    {/* <AddNote/>  */}
+     <Notes/>
+  </div>
   )
 }
 
