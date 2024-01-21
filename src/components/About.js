@@ -1,9 +1,9 @@
-import React, { useContext } from 'react'
+// import React, { useContext } from 'react'
 // import React, { useEffect } from 'react'
-import noteContext from '../context/notes/NoteContext'
+// import noteContext from '../context/notes/NoteContext'
 
 const About = () => {
-const a = useContext(noteContext)
+// const a = useContext(noteContext)
  
 //  useEffect(()=> {
 //     a.update();
@@ -12,7 +12,8 @@ const a = useContext(noteContext)
 
   return (
     <div>
-      This is a About {a.name} and he is class {a.class}
+      {/* This is a About {a.name} and he is class {a.class} */}
+      <h3>This is About page</h3>
      </div> 
   ) 
 }
