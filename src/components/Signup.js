@@ -23,7 +23,11 @@ const Signup = () => {
          // Save the auth token and redirect home page
            localStorage.setItem('token', json.authtoken);
            history('/');
+           // new
+        // props.showAlert("Account created Successfully" , "success")
+
        } else {
+        // props.showAlert("Invalid Credentials" , "danger")
           alert("Invalid credentials")
         }
        
