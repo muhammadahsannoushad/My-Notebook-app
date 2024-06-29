@@ -26,6 +26,8 @@ function App() {
   <> 
     <NoteState> 
      <Navbar/>
+
+     
       {/* <Alert message="This is Amazing React Course"/> */}
        <Alert alert={alert}/>
        <Routes>    
